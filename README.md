@@ -25,25 +25,25 @@
 ```
 
 <context-param>
-		<param-name>webAppRootKey</param-name>
-		<param-value>spring-mvc-demo.root</param-value>
+	<param-name>webAppRootKey</param-name>
+	<param-value>spring-mvc-demo.root</param-value>
 </context-param>
 
 
 <servlet>
-		<servlet-name>spring-mvc-demo</servlet-name>
-		<servlet-class>
-			org.springframework.web.servlet.DispatcherServlet
-		</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>WEB-INF/spring-mvc.xml</param-value>
-		</init-param>
-		<load-on-startup>3</load-on-startup>
-	</servlet>
+	<servlet-name>spring-mvc-demo</servlet-name>
+	<servlet-class>
+		org.springframework.web.servlet.DispatcherServlet
+	</servlet-class>
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/spring-mvc.xml</param-value>
+	</init-param>
+	<load-on-startup>3</load-on-startup>
+</servlet>
 	
-	<servlet-mapping>
-		<servlet-name>spring-mvc-demo</servlet-name>
-		<url-pattern>*.html</url-pattern>
-	</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>spring-mvc-demo</servlet-name>
+	<url-pattern>*.html</url-pattern>
+</servlet-mapping>
 ```
